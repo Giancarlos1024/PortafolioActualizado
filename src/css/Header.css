@@ -1,0 +1,58 @@
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 10px;
+  background-color: #fff;
+  box-shadow: 1px 1px 1px 2px rgb(218, 209, 209);
+  font-weight: bold;
+  font-size: 20px;
+}
+strong{
+  color: rgb(153, 160, 160);
+  
+}
+strong:hover {
+  background-image: linear-gradient(to right, #ac9826b9, #11e9af, #11e9af);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+ul{
+  display: flex;
+}
+ul > li {
+  list-style-type: none;
+  margin: 0px 10px;
+}
+ul > li > a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  background-image: linear-gradient(to right, #ac9826b9, #ac9826b9, #11e9af);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  
+}
+.herDadeiv > button{
+  padding: 12px 20px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 1px 1px 10px rgb(189, 181, 181); 
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+.herDadeiv > button:hover{
+  background: linear-gradient(to right, #1d29d1f8, #200cd4f8, #0d1ad1f8);
+  color: rgb(224, 219, 209);
+}
+.herDadeiv > button >img{
+  margin-right: 10px;
+}

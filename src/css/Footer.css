@@ -1,0 +1,60 @@
+/* Footer.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .footer strong {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+  .contactoIcons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contactoIcons div {
+    transition: transform 0.3s ease;
+  }
+  
+  .contactoIcons div:hover {
+    transform: scale(1.1);
+  }
+  
+  .contactoIcons img {
+    border-radius: 50%;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .contactoIcons img:hover {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
+  }
+  
+  .footerText {
+    margin-top: 1.5rem;
+  }
+  
+  .footerText p {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin: 0.5rem 0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .contactoIcons {
+      flex-direction: column;
+    }
+  }
+  

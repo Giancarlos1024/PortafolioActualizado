@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+}
+
+.sectionDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.containerSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  animation: slideInLeft 1s ease-in-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.iconsDiv {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.iconsDiv i {
+  font-size: 2rem;
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.iconsDiv i:hover {
+  color: #ff6347;
+  transform: scale(1.2);
+}
+
+.infoDiv {
+  text-align: center;
+}
+
+.infoDiv h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: #333;
+}
+
+.infoDiv img {
+  margin-right: 1rem;
+}
+
+.parrafoDiv p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.buttonFlex {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #ff6347;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 5px;
+  animation: popIn 0.6s ease-in-out;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.button img {
+  display: block;
+}
+
+.button p {
+  margin: 0;
+}
+
+.button:hover {
+  background-color: #e5533d;
+  transform: scale(1.05);
+}
+
+.containerSection2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slideInRight 1s ease-in-out;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.containerSection2 img {
+  max-width: 70%;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.containerSection2 img:hover {
+  transform: rotate(5deg) scale(0.5);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sectionDiv {
+    grid-template-columns: 1fr;
+  }
+
+  .containerSection2 {
+    margin-top: 2rem;
+  }
+}
