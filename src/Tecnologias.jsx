@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/Tecnologias.css'; // Asegúrate de crear y vincular este archivo CSS
-import Curriculum from '/Giancarlos_Renzo_Velasquez_Ancasi_CV.pdf';
+import Curriculum from '/Giancarlos_Renzo_Velasquez_Ancasi_Cv.pdf';
 export const Tecnologias = () => {
   return (
     <section className="sectionAbout" id="About">
