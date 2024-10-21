@@ -4,7 +4,7 @@ import '../css/Footer.css'; // Asegúrate de crear y vincular este archivo CSS
 export const Footer = () => {
   return (
     <footer className="footer" id='Contact'>
-      <strong>Contactame</strong>
+      <strong>CONTACTAME</strong>
       <section className="contactoIcons">
         <div>
           <a href="https://wa.me/51957786281" target="_blank" rel="noopener noreferrer">

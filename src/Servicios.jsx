@@ -5,7 +5,7 @@ const Servicios = () => {
   return (
     <section className="sectionServices" id="Services">
       <div className="servicesContainer">
-        <h1 className="servicesTitle ">Servicios</h1>
+        <h1 className="servicesTitle">Servicios</h1>
         <div className="servicesGrid">
           <div className="serviceCard">
           <img width="48" height="48" src="https://img.icons8.com/color/48/teaching.png" alt="teaching"/>

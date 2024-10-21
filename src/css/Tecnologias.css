@@ -1,8 +1,3 @@
-body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #f8f8f8;
-}
 
 .sectionAbout {
   background: linear-gradient(135deg, #f3f3f3, #ffffff);
@@ -28,11 +23,12 @@ body {
 }
 
 .aboutMe strong {
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: block;
   margin-bottom: 1rem;
   color: #333;
   animation: slideInDown 1s ease-in-out;
+  font-weight: bold;
 }
 
 @keyframes slideInDown {

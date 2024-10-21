@@ -1,14 +1,9 @@
-body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #f8f8f8;
-}
 
 .sectionDiv {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 2rem;
-  background-color: #fff;
+  /* background-color: #d30d0d; */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   animation: fadeIn 1.5s ease-in-out;
@@ -27,8 +22,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem;
+  padding-top: 4rem;
   animation: slideInLeft 1s ease-in-out;
+  /* background-color: #ff6347; */
 }
 
 @keyframes slideInLeft {
@@ -57,22 +53,38 @@ body {
   color: #ff6347;
   transform: scale(1.2);
 }
-
+.tituloPresentacion{
+  padding-bottom: 15px;
+}
 .infoDiv {
   text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.enlacePresentacion{
+  color: rgb(240, 232, 232);
+  font-weight: bold;
+  text-decoration: none;
+}
+.enlacePresentacion:hover{
+  color: #fff;
+}
+#tituloH1{
+  /* background-color: #e5533d; */
+  text-align: start;
+  font-size: 50px;
+  padding-left: 40px;
+  line-height: 1.2;
 }
 
-.infoDiv h1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  margin: 1rem 0;
-  color: #333;
-}
 
 .infoDiv img {
   margin-right: 1rem;
+}
+span{
+  color: #e5533d;
+  font-weight: bold;
+  font-size: 90px;
 }
 
 .parrafoDiv p {
@@ -80,12 +92,18 @@ body {
   line-height: 1.5;
   color: #666;
   margin-bottom: 1.5rem;
+  padding: 0px 40px;
+  text-align: justify;
 }
 
 .buttonFlex {
   display: flex;
+  flex-direction: row;
   gap: 1rem;
-  justify-content: center;
+  justify-content: start;
+  /* background-color: aqua; */
+  padding-left: 40px;
+
 }
 
 .button {
@@ -132,6 +150,8 @@ body {
   justify-content: center;
   align-items: center;
   animation: slideInRight 1s ease-in-out;
+  /* background-color: greenyellow; */
+  
 }
 
 @keyframes slideInRight {
@@ -144,11 +164,19 @@ body {
 }
 
 .containerSection2 img {
-  max-width: 70%;
+  width: 70%;
   border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   transition: transform 0.3s ease;
 }
+
+
+
+.HolaPresentacion{
+  font-size: 150px;
+}
+
 
 
 

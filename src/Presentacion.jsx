@@ -13,11 +13,8 @@ const Presentacion = () => {
           <i className='bx bxl-linkedin-square'></i>
         </div>
         <div className="infoDiv">
-          <div>
-            <h1>
-              <img width="56" height="56" src="https://img.icons8.com/emoji/96/waving-hand-emoji.png" alt="waving-hand-emoji" />
-              <span>Hola, Soy Giancarlos Velasquez</span>
-            </h1>
+          <div className='tituloPresentacion'>
+            <h1 id="tituloH1"><span>Hola</span>, Soy Giancarlos Velasquez</h1>
           </div>
           <div className="parrafoDiv">
             <p>
@@ -25,13 +22,13 @@ const Presentacion = () => {
             </p>
           </div>
           <div className="buttonFlex">
-            <button type="button" className="button">
+            {/* <button type="button" className="button">
               <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/60/apps.png" alt="apps" />
               <p>DESARROLLADOR WEB</p>
-            </button>
+            </button> */}
             <button type="button" className="button">
-              <img width="20" height="20" src="https://img.icons8.com/ios/50/web.png" alt="web" />
-              <p>DISEÑADOR UI/UX</p>
+              {/* <img width="20" height="20" src="https://img.icons8.com/ios/50/web.png" alt="web" /> */}
+              <a href='#About' className='enlacePresentacion'>Leer más</a>
             </button>
           </div>
         </div>

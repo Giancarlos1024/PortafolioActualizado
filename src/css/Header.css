@@ -5,7 +5,7 @@ header{
   align-items: center;
   padding: 20px 10px;
   background-color: #fff;
-  box-shadow: 1px 1px 1px 2px rgb(218, 209, 209);
+  box-shadow: 1px 1px 1px 1px rgb(218, 209, 209);
   font-weight: bold;
   font-size: 20px;
 }
@@ -25,10 +25,14 @@ ul{
 ul > li {
   list-style-type: none;
   margin: 0px 10px;
+  text-transform: uppercase;
+  font-size: 15px;
+  
 }
 ul > li > a{
   text-decoration: none;
-  color: black;
+  color: rgb(156, 148, 144);
+  font-weight: bold;
 }
 
 a:hover{

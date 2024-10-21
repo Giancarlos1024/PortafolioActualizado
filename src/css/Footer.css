@@ -1,8 +1,5 @@
 /* Footer.css */
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-  }
+
   
   .footer {
     background-color: #333;
@@ -15,6 +12,7 @@ body {
     font-size: 1.5rem;
     display: block;
     margin-bottom: 1rem;
+    font-weight: bold;
   }
   
   .contactoIcons {

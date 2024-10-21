@@ -1,11 +1,11 @@
 import React from 'react';
 import './css/Tecnologias.css'; // Asegúrate de crear y vincular este archivo CSS
-import Curriculum from '/Giancarlos_Renzo_Velasquez_Ancasi_Cv.pdf';
+import Curriculum from '/giancarlos_renzo_velasquez_ancasi.pdf';
 export const Tecnologias = () => {
   return (
     <section className="sectionAbout" id="About">
       <div className="aboutDiv aboutMe">
-        <strong>Sobre Mi</strong>
+        <strong>SOBRE MI</strong>
         <p>
           Soy un desarrollador web fullstack con experiencia en la creación de aplicaciones web y sitios dinámicos. 
           Mi enfoque se centra en combinar una sólida comprensión del desarrollo frontend con habilidades backend, base de datos, 
@@ -17,7 +17,7 @@ export const Tecnologias = () => {
             <p>Años de Experiencia</p>
           </div>
           <div className="exp">
-            <h3>40+</h3>
+            <h3>60+</h3>
             <p>Proyectos Completados</p>
           </div>
           <div className="exp">
@@ -96,7 +96,7 @@ export const Tecnologias = () => {
           </section>
         </div>
         <div className="buttonAbout">
-          <a href={Curriculum} download="Curriculum.pdf" target="_blank" rel="noopener noreferrer">
+          <a href={Curriculum} download="Curriculum Vitae.pdf" target="_blank" rel="noopener noreferrer">
             <button type="button">Descargar CV</button>
           </a>
         </div>
