@@ -1,16 +1,37 @@
-const proyectos = [
-    {
-      nombre: "SISTEMA DE FACTURACION",
-      descripcion: "Descripción del Proyecto 1",
-      imagen: "URL_de_la_imagen_del_Proyecto_1"
-    },
-    {
-      nombre: "Proyecto 2",
-      descripcion: "Descripción del Proyecto 2",
-      imagen: "URL_de_la_imagen_del_Proyecto_2"
-    },
-    // Agrega más proyectos según sea necesario
-  ];
+const projects = [
+  {
+    title: 'Sistema de Liquidación Comisiones',
+    description: 'React, Node, Mysql, Figma',
+    imageUrl: './SistemaLC.png',
+    link: 'https://comisiones-freyes.com/'
+  },
+  {
+    title: 'Juego de Aprendizaje',
+    description: 'Html, Css, JavaScript',
+    imageUrl: './JuegoAprendizaje.png',
+    link: 'https://juego-magico.netlify.app/'
+  },
+  {
+    title: 'Tienda Online (Freelancer)',
+    description: 'React',
+    imageUrl: './TiendaOnline_Fernando.png',
+    link: 'https://sitio-web-detodo.vercel.app/'
+  },
+  {
+    title: 'Web Personal (Freelancer)',
+    description: 'Html, Css, JavaScript',
+    imageUrl: './Web_Personal_Claudia.png',
+    link: 'https://claudia-futura-astronauta.netlify.app/'
+  },
+  {
+    title: 'Tic Tac Toc',
+    description: 'React',
+    imageUrl: './TicTacToc.png',
+    link: 'https://tic-toc-tac.netlify.app/'
+  },
+
+  // Añadir más proyectos aquí
+];
   
-  export default proyectos;
+  export default projects;
   
