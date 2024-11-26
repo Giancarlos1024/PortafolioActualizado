@@ -24,7 +24,7 @@ const projects = [
     link: 'https://claudia-futura-astronauta.netlify.app/'
   },
   {
-    title: 'Tic Tac Toc',
+    title: 'Tic Tac Toc (Juego)',
     description: 'React',
     imageUrl: './TicTacToc.png',
     link: 'https://tic-toc-tac.netlify.app/'

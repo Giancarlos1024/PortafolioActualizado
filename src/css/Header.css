@@ -79,18 +79,18 @@ strong:hover {
 @media (max-width: 768px) {
   .nav-list {
     position: absolute;
-    top: 60px;
+    top: 0px;
     left: 0;
     width: 100%;
-    height: calc(100vh - 500px);
+    height: calc(100vh - 370px);
     background-color: #fff;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 30px;
     transform: translateY(-130%);
-    transition: transform 0.3s ease-in-out;
-    z-index: 1; /* Asegurarse de que esté por encima de otros elementos */
+    transition: transform .3s ease-in-out;
+    z-index: 0;
   }
 
   .nav.open .nav-list {
