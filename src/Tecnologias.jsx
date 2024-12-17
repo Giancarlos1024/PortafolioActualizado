@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/Tecnologias.css'; // Asegúrate de crear y vincular este archivo CSS
-import Curriculum from '/Cv_Ingeniero_Sistemas.pdf';
+import Curriculum from '/Cv_VELASQUEZ_ANCASI_GIANCARLOS_RENZO.pdf';
 export const Tecnologias = () => {
   return (
     <section className="sectionAbout" id="About">
