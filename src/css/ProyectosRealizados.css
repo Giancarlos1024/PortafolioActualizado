@@ -1,96 +1,89 @@
 .proyectos-container {
-    padding: 20px;
-    padding-bottom: 30px;
-    background: linear-gradient(135deg, #e8f5e9, #ffffff);
-  }
-  .itemProyectos{
-    /* background-color: olivedrab; */
-    text-align: center;
-    
-    
-  }
-  .servicesTitle {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 2rem;
-    animation: fadeIn 1.5s ease-in-out;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
-  
-  }
-  .project-card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin: 10px; /* Espacio entre los elementos del carrusel */
-    width: calc(100% - 30px); /* Para que se ajuste al ancho del contenedor en móviles */
-  }
-  
-  .project-card:hover {
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  .project-image {
-    width: 100%;
-    height: 200px;
-    object-fit:calc(100vw);
-    
-  }
-  
-  .project-info {
-    padding: 20px;
-  }
-  
-  .project-info h3 {
-    margin: 0 0 10px;
-    font-size: 1rem;
-    color: #333;
-  }
-  .project-info h4 {
-    margin: 0 0 10px;
-    font-size: 0.9rem;
-    color: #13887e;
-    
-  }
-  
-  .project-info p {
-    margin: 0 0 20px;
-    color: #666666;
-    margin-top: 10px;
-    font-size: 0.8rem;
-    margin-bottom: 25px;
-  }
-  .buttonProyecto{
-    background-color: rgb(12, 65, 240);
-    padding: 11px 20px;
-    border-radius: 2px;
-  }
-  .project-info a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .project-info a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Ajustes adicionales para móviles */
-  @media (max-width: 464px) {
-    .project-card {
-      margin: 0 auto 10px auto; /* Centrar el card y dar margen inferior */
-      width: calc(100% - 20px); /* Ajustar ancho en móviles */
-    }
-  
-    .project-info {
-      padding: 10px; /* Reducir padding en móviles */
-    }
-  
-    .project-info h3 {
-      font-size: 1.2rem; /* Reducir tamaño de fuente en móviles */
-    }
-  }
-  
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f5f7fa, #ffffff);
+}
+
+.servicesTitle {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+  color: #222;
+}
+
+/* GRID PROFESIONAL */
+.projects-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* CARD */
+.project-card {
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+}
+
+/* IMAGEN */
+.project-image-wrapper {
+  overflow: hidden;
+  height: 200px;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.08);
+}
+
+/* INFO */
+.project-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.project-info h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.project-tech {
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* BOTÓN */
+.buttonProyecto {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.buttonProyecto:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
+}
