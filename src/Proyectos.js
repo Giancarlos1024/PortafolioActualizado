@@ -6,6 +6,12 @@ const projects = [
     link: 'http://newproject.com.pe/'
   },
   {
+    title: 'Sistema de Emisión de Certificados',
+    description: 'Html, Css, Php, JavaScript, Mysql, Figma',
+    imageUrl: './sistema-emision.png',
+    link: 'https://certificados.aprendemasdev.com/'
+  },
+  {
     title: 'Landing Pages Recuerdos de Figuras 3D',
     description: 'Php, Html, Css, JavaScript, Figma',
     imageUrl: './3d.png',
