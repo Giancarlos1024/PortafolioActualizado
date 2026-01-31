@@ -51,7 +51,7 @@ const projects = [
     title: 'Landing Pages Servicio Barberia',
     description: 'Php, Html, Css, JavaScript, Figma',
     imageUrl: './barberia.png',
-    link: 'barberia.aprendemasdev.com'
+    link: 'https://barberia.aprendemasdev.com'
   },
   {
     title: 'Web Personal (Freelancer)',
