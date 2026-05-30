@@ -1,107 +1,248 @@
-/* Header.css */
-header {
+/* --- SISTEMA DE DISEÑO PREMIUM (Paleta de Colores y Variables) --- */
+:root {
+  /* Fondo oscuro semi-transparente estilo Glassmorphism */
+  --header-bg: rgba(10, 15, 30, 0.75); 
+  --card-bg-mobile: #0b111e;
+  
+  /* Colores de Texto */
+  --text-main: #f8fafc;        /* Blanco premium */
+  --text-muted: #f8fafc;      
+  
+  /* Gradiente e Iluminación Tecnológica */
+  --tech-gradient: linear-gradient(135deg, #ac9826 0%, #11e9af 100%);
+  --glow-color: rgba(17, 233, 175, 0.15);
+  
+  /* Animaciones y Bordes */
+  --border-light: rgba(255, 255, 255, 0.06);
+  --bezier-bounce: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  --transition-fast: all 0.25s ease;
+  --transition-medical: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* --- ESTRUCTURA DEL HEADER --- */
+.header {
+  width: 100%;
+  border-bottom: 1px solid var(--border-light);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  transition: var(--transition-medical);
+}
+
+.header-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 18px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 10px;
-  background-color: #fff;
-  box-shadow: 1px 1px 1px 1px rgb(218, 209, 209);
-  font-weight: bold;
-  font-size: 20px;
-  position: relative; /* Para posicionar el menú absoluto */
 }
 
+/* --- BRAND / LOGOTIPO --- */
 .brand {
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-main);
+  letter-spacing: -0.5px;
+  cursor: default;
+  user-select: none;
 }
 
-strong {
-  color: rgb(153, 160, 160);
-}
-
-strong:hover {
-  background-image: linear-gradient(to right, #ac9826b9, #11e9af, #11e9af);
+.brand strong {
+  background: var(--tech-gradient);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  font-weight: 800;
+  position: relative;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-}
-
+/* --- NAVEGACIÓN (ESCRITORIO) --- */
 .nav-list {
   display: flex;
-  gap: 20px;
-}
-
-.nav-item {
-  list-style-type: none;
+  gap: 36px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-link {
   text-decoration: none;
-  color: rgb(156, 148, 144);
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 15px;
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  padding: 8px 4px;
+  position: relative;
+  transition: var(--transition-fast);
 }
 
+/* Efecto hover: Cambio de color de texto */
 .nav-link:hover {
-  background-image: linear-gradient(to right, #ac9826b9, #ac9826b9, #11e9af);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--text-main);
 }
 
-.contact {
+/* Animación de barra inferior minimalista */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--tech-gradient);
+  transition: var(--transition-medical);
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* --- ACCIONES Y COMPONENTES SOCIALES --- */
+.header-actions {
   display: flex;
   align-items: center;
+  gap: 24px;
 }
 
+.social-media {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Botones contenedores circulares para las redes */
+.social-icon-link {
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 18px;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-light);
+  transition: var(--transition-fast);
+}
+
+/* Efectos Hover Individuales con Brillo de Neón Trasero */
+.social-icon-link:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.social-icon-link.whatsapp:hover {
+  color: #25D366;
+  border-color: rgba(37, 211, 102, 0.3);
+  box-shadow: 0 0 15px rgba(37, 211, 102, 0.15);
+}
+
+.social-icon-link.facebook:hover {
+  color: #1877F2;
+  border-color: rgba(24, 119, 242, 0.3);
+  box-shadow: 0 0 15px rgba(24, 119, 242, 0.15);
+}
+
+.social-icon-link.youtube:hover {
+  color: #FF0000;
+  border-color: rgba(255, 0, 0, 0.3);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.15);
+}
+
+/* --- MENÚ HAMBURGUESA (ANIMACIÓN PREMIUM) --- */
 .hamburger {
   display: none;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-light);
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
   flex-direction: column;
-  justify-content: space-around;
-  height: 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
   cursor: pointer;
+  padding: 0;
+  z-index: 1010;
+  transition: var(--transition-fast);
+}
+
+.hamburger:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .bar {
-  width: 30px;
-  height: 3px;
-  background-color: #333;
-  border-radius: 5px;
-  transition: all 0.3s ease;
+  width: 18px;
+  height: 2px;
+  background-color: var(--text-main);
+  border-radius: 4px;
+  transition: var(--transition-medical);
 }
 
+/* Animación fluida de transformación a "X" */
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+  width: 20px;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+  width: 20px;
+}
+
+/* --- ADAPTABILIDAD RESPONSIVE (MÓVIL) --- */
 @media (max-width: 768px) {
-  .nav-list {
-    position: absolute;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    height: calc(100vh - 370px);
-    background-color: #fff;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    transform: translateY(-130%);
-    transition: transform .3s ease-in-out;
-    z-index: 0;
-  }
-
-  .nav.open .nav-list {
-    transform: translateY(0);
-  }
-
   .hamburger {
     display: flex;
-    z-index: 2;
   }
 
+  /* Menú lateral estilo aplicación nativa */
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 320px;
+    height: 100vh;
+    background-color: var(--card-bg-mobile);
+    border-left: 1px solid var(--border-light);
+    box-shadow: -20px 0 40px rgba(0, 0, 0, 0.6);
+    padding: 110px 40px;
+    box-sizing: border-box;
+    transition: var(--transition-medical);
+    z-index: 999;
+  }
+
+  .nav.open {
+    right: 0;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .nav-link {
+    font-size: 18px;
+    color: var(--text-muted);
+    display: block;
+  }
+  
+  .nav-link::after {
+    left: 0;
+    transform: none;
+  }
+
+  /* Ocultamos redes sociales en móviles dentro del header para limpiar espacio */
   .contact {
     display: none;
   }

@@ -1,6 +1,11 @@
 
 import './css/Tecnologias.css'; // Asegúrate de crear y vincular este archivo CSS
 import Curriculum from '/Cv_VELASQUEZ_ANCASI_GIANCARLOS_RENZO_2025.pdf';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faLinkedinIn, faInstagram, faGithub,faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+
 export const Tecnologias = () => {
   return (
     <section className="sectionAbout" id="About">
@@ -36,7 +41,12 @@ export const Tecnologias = () => {
               <strong>CSS</strong>
             </div>
             <div className="skill">
-              <img width="48" height="48" src="https://img.icons8.com/ios-filled/50/javascript-logo.png" alt="JavaScript"/>
+              <img 
+                width="48" 
+                height="48" 
+                src="https://img.icons8.com/color/96/javascript--v1.png" 
+                alt="JavaScript"
+              />
               <strong>JavaScript</strong>
             </div>
             <div className="skill">
@@ -44,7 +54,12 @@ export const Tecnologias = () => {
               <strong>Git</strong>
             </div>
             <div className="skill">
-              <img width="48" height="48" src="https://img.icons8.com/sf-regular-filled/48/github.png" alt="GitHub"/>
+              <img 
+                width="48" 
+                height="48" 
+                src="https://img.icons8.com/sf-regular-filled/96/ffffff/github.png" 
+                alt="GitHub"
+              />
               <strong>GitHub</strong>
             </div>
             <div className="skill">
@@ -62,7 +77,12 @@ export const Tecnologias = () => {
           </section>
           <section className="sectionSkills">
             <div className="skill">
-              <img width="48" height="48" src="https://img.icons8.com/cute-clipart/64/react-native.png" alt="React Native"/>
+              <img 
+                width="48" 
+                height="48" 
+                src="https://img.icons8.com/color/96/react-native.png" 
+                alt="React Native"
+              />
               <strong>R.Native</strong>
             </div>
             <div className="skill">

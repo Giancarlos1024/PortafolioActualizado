@@ -9,7 +9,7 @@
   font-weight: 700;
   margin-bottom: 50px;
   letter-spacing: 1px;
-  color: #222;
+  color: white;
 }
 
 /* GRID PROFESIONAL */
@@ -23,9 +23,7 @@
 
 /* CARD */
 .project-card {
-  background: #ffffff;
   border-radius: 14px;
-  overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   transition: box-shadow 0.3s ease;
 }
@@ -36,8 +34,7 @@
 
 /* IMAGEN */
 .project-image-wrapper {
-  overflow: hidden;
-  height: 200px;
+  
 }
 
 .project-image {
@@ -58,16 +55,20 @@
 }
 
 .project-info h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-size: 0.9rem;
+  font-weight: 900;
   margin-bottom: 10px;
-  color: #111;
+  color: white;
+
+  text-transform: uppercase;
 }
 
 .project-tech {
-  font-size: 0.85rem;
-  color: #777;
+  font-size: 0.95rem;
+  color: #11e9af;
   margin-bottom: 20px;
+  font-weight: 900;
+  text-transform: lowercase;
 }
 
 /* BOTÓN */

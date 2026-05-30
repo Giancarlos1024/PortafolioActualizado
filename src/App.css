@@ -1,8 +1,37 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: serif;
-    font-weight: 400;
-    font-style: normal;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Forzar a que el contenedor 3D de Vanta ocupe toda la pantalla fija */
+#vanta-bg {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: -1 !important; /* Detrás de todo obligatoriamente */
+}
+
+/* El lienzo WebGL de Three.js se adapta al contenedor */
+#vanta-bg canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evita scrolls horizontales raros */
+}
+
+/* Transparencia absoluta para ver el universo 3D de fondo */
+section, .hero-section, .sectionDiv, main {
+  background: transparent !important;
+  background-color: transparent !important;
 }

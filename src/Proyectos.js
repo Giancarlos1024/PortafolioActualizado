@@ -7,9 +7,27 @@ const projects = [
   },
   {
     title: 'Plataforma Educativa',
-    description: 'Html, Css, Php, JavaScript, Mysql, Figma',
+    description: 'Php, JavaScript, Mysql, Figma',
     imageUrl: './plataforma.png',
     link: 'https://aprendemasdev.com/'
+  },
+  {
+    title: 'Plataforma de Sorteos',
+    description: 'Php, JavaScript, Mysql, Figma',
+    imageUrl: './sorteos.png',
+    link: 'https://premios.aprendemasdev.com/'
+  },
+  {
+    title: 'Sistema POS (Fruteria / Abarrotes)',
+    description: 'Php, JavaScript, Mysql, Figma',
+    imageUrl: './sistemapos.png',
+    link: 'https://fruteria.aprendemasdev.com/'
+  },
+  {
+    title: 'Sistema Web POS y E-commerce',
+    description: 'Php, JavaScript, Mysql, Figma',
+    imageUrl: './ecomerce.png',
+    link: 'https://lamotora.aprendemasdev.com/'
   },
   {
     title: 'Sistema de Emisión de Certificados',

@@ -10,10 +10,24 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^7.2.0",
+    "@fortawesome/free-brands-svg-icons": "^7.2.0",
+    "@fortawesome/free-solid-svg-icons": "^7.2.0",
+    "@fortawesome/react-fontawesome": "^3.3.1",
+    "@react-three/drei": "^9.106.0",
+    "@react-three/fiber": "^8.17.14",
+    "@tsparticles/basic": "^4.1.0",
+    "@tsparticles/engine": "^4.1.0",
+    "@tsparticles/react": "^4.1.0",
+    "@tsparticles/slim": "^4.1.0",
     "framer-motion": "^11.11.17",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-multi-carousel": "^2.8.5"
+    "react-icons": "^5.6.0",
+    "react-multi-carousel": "^2.8.5",
+    "three": "^0.184.0",
+    "tsparticles-slim": "^2.12.0",
+    "vanta": "^0.5.24"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

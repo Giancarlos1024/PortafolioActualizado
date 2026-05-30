@@ -13,7 +13,7 @@
   
   .servicesTitle {
     font-size: 1.5rem;
-    color: #333;
+    color: white;
     margin-bottom: 2rem;
     animation: fadeIn 1.5s ease-in-out;
     text-transform: uppercase;
@@ -37,7 +37,7 @@
   }
   
   .serviceCard {
-    background: #fff;
+
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 2rem;
@@ -62,13 +62,13 @@
   
   .serviceCard h2 {
     font-size: 1.5rem;
-    color: #333;
+    color: white;
     margin-bottom: 1rem;
   }
   
   .serviceCard p {
     font-size: 1rem;
-    color: #666;
+    color: white;
     line-height: 1.6;
   }
   

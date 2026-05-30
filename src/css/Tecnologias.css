@@ -5,6 +5,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   animation: fadeIn 1.5s ease-in-out;
+  color: white;
 }
 
 @keyframes fadeIn {
@@ -26,7 +27,6 @@
   font-size: 1.5rem;
   display: block;
   margin-bottom: 1rem;
-  color: #333;
   animation: slideInDown 1s ease-in-out;
   font-weight: bold;
 }
@@ -42,7 +42,7 @@
 
 .aboutMe p {
   font-size: 1rem;
-  color: #666;
+
   line-height: 1.6;
   margin-bottom: 2rem;
   animation: slideInLeft 1s ease-in-out;
@@ -80,7 +80,7 @@
 
 .exp p {
   font-size: 1rem;
-  color: #333;
+  color: white;
 }
 
 .tecnoSkills {
@@ -100,7 +100,6 @@
 }
 
 .skill {
-  background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 1rem;
@@ -117,7 +116,6 @@
 
 .skill strong {
   font-size: 1rem;
-  color: #333;
 }
 
 .skill:hover {
@@ -138,7 +136,9 @@
     transform: translateY(0);
   }
 }
-
+.buttonAbout > a{
+  text-decoration: none;
+}
 .buttonAbout button {
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
