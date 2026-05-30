@@ -36,6 +36,12 @@ const projects = [
     link: 'https://certificados.aprendemasdev.com/'
   },
   {
+    title: 'Sistema de Gestion Academica',
+    description: 'Html, Css, Php, JavaScript, Mysql, Figma',
+    imageUrl: './gestionacademica.png',
+    link: 'https://gestionacademica.aprendemasdev.com/'
+  },
+  {
     title: 'Landing Pages Recuerdos de Figuras 3D',
     description: 'Php, Html, Css, JavaScript, Figma',
     imageUrl: './3d.png',
